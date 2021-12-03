@@ -6,7 +6,7 @@ public class NumericStringsAndEnglishWords {
 	//10203 → "1zerotwozero3"
 	//s가 의미하는 원래 숫자를 return 하도록 solution 함수를 완성해주세요.
 
-	class Solution {
+	/*class Solution {
 	    public int solution(String s) {
 	        int answer = 0;
 	        
@@ -44,5 +44,24 @@ public class NumericStringsAndEnglishWords {
 	        
 	        return answer;
 	    }
+	}*/
+	
+	class Solution {
+	    public int solution(String s) {
+	        int answer = 0;
+	        
+	        String[] alphabets = {"zero", "one", "two", "three", "four", "five", 
+	                              "six", "seven", "eight", "nine"};
+	        String[] num = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"};
+	        
+	        for(int i=0; i<num.length; i++){
+	            s = s.replaceAll(alphabets[i], num[i]);
+	        }
+	        answer = Integer.parseInt(s);
+	        
+	        return answer;
+	    }
 	}
+	
+	
 }
