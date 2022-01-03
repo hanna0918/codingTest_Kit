@@ -35,4 +35,19 @@ public class GCDAndLCM {
         
         return answer;
     }
+	/*
+		임의의 두 자연수 a, b(a > b)가 주어지고
+		a를 b로 나눈 나머지를 r(r = a % b)로 이라고 하자.
+		a = b가되고 b = r이 되는데, 이때 b가 0이 될 때의 a가 최대공약수이다.
+		
+		//최대공약수
+	        int a = Math.max(n, m);
+	        int b = Math.min(n, m);
+	        while (b != 0) {
+	            int r = a % b;
+	            a = b;
+	            b = r;
+	        }
+	    // 최소공배수 = 두 수의 곱(a*b) / 최대공약수
+	*/
 }
