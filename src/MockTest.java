@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class MockTest {
@@ -34,7 +35,7 @@ public class MockTest {
 				cCnt++;
 			}
 		}
-		
+		/*
 		int[] arr = new int[3];
 		arr[0] = aCnt;
 		arr[1] = bCnt;
@@ -68,6 +69,18 @@ public class MockTest {
 				answer[0] = 3;
 			}
 		}
+		*/
+		int max = Math.max(Math.max(aCnt, bCnt),cCnt); // max값
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        if(max==aCnt) list.add(1); //max값이랑 같으면 list에 추가
+        if(max==bCnt) list.add(2);
+        if(max==cCnt) list.add(3);
+        
+        answer = new int[list.size()];
+        
+        for(int i =0; i<answer.length; i++) {
+        	answer[i] = list.get(i);
+        }
 
 		return answer;
 	}
