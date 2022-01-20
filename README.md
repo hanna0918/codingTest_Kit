@@ -1,2 +1,2 @@
 # codingTest_Kit
-Programmers Algorithm Test
+Programmers Algorithm Coding Test
